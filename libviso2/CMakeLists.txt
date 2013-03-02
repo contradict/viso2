@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(libviso2)
 
+find_package(catkin REQUIRED)
+
 catkin_package(
-    LIBRARIES
-        viso2
+    INCLUDE_DIRS include
+    LIBRARIES viso2
 )
 
 # use sse3 instruction set
