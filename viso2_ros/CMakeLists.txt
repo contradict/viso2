@@ -58,3 +58,13 @@ target_link_libraries(mono_odometer
     ${OpenCV_LIBRARIES}
     )
 
+install(
+    TARGETS
+      stereo_odometer
+      mono_odometer
+    ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+
