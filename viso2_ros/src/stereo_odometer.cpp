@@ -145,6 +145,8 @@ protected:
       {
         tf::Transform delta_transform;
         delta_transform.setIdentity();
+        setPoseCovariance(STANDARD_POSE_COVARIANCE);
+        setTwistCovariance(STANDARD_TWIST_COVARIANCE);
         integrateAndPublish(delta_transform, l_image_msg->header.stamp);
       }
     }
